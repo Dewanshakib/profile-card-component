@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: hsl(185, 75%, 39%);
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-pattern-top.svg) , url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat , no-repeat;
+    background-position: bottom 50vw right 50vw , top 50vw left 50vw;
+}
+.hero{
+    width: 320px;
+    height: 360px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.name-info{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 122px;
+}
+.name-info > h4{
+    margin-top: 10px;
+    font-weight: lighter;
+    color: gray;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 3px solid #fff;
+}
+.followers-info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.followers h4{
+    color: gray;
+    font-weight: 100;
+    margin-top: 5px;
+} 
+.likes h4{
+    color: gray;
+    font-weight: 100;
+    margin-top: 5px;
+}
+.photo  h4{
+    color: gray;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.separator{
+    display: block;
+    width: 100%;
+    border: 0.01em solid gray;
+    opacity: 0.5;
+    margin-bottom: 45px;
+}
+.spn{
+    color: gray;
+    margin-left: 10px;
+}
+@media screen and (max-width:375px) {
+    .main{
+        background-position: bottom 102vw right 37vw , top 99vw left 30vw;
+    }
+}
